@@ -3,8 +3,9 @@
 ## Description
 This project transforms your desktop background to mimic the iconic Matrix cascade
 of green 1's and 0's, while allowing you to maintain any chosen wallpaper as the
-background. It creates an interactive desktop where icons remain functional but hidden
-unless hovered over, offering a unique way to 'hide' icons within the cascade area.
+background. It creates an interactive desktop where icons remain
+functional but hidden unless hovered over, offering a unique way to 'hide' icons
+within the cascade area.
 
 ## Key Features
 - **Matrix Cascade Effect**: Enjoy a dynamic background of cascading green numbers
@@ -26,24 +27,24 @@ unless hovered over, offering a unique way to 'hide' icons within the cascade ar
    reverse 'L' shaped area at the bottom and far right of your screen. This ensures they
    remain visible and accessible. Once the program is running, you can choose to hide icons
    by moving them outside this area, where they will be obscured by the cascade yet still functional.
-2. **Download and Run**:
-   - Download `matrix_cascade.exe` from this repository.
-   - Place it in your Windows Startup folder. This ensures the cascade effect starts automatically
-     each time you start your computer.
-3. **Activate**: Restart your computer to activate the Matrix cascade effect. It will
-   continue to initiate on every startup.
+2. **Run the Script or Convert to Executable**:
+   - Ensure you have Python and Pygame installed:
+     ```bash
+     pip install pygame
+     ```
+   - Download `matrix_cascade.py` from this repository and run it directly or convert it into
+     an executable using the instructions below.
 
-## Additional Information
-This program was created using Python and Pygame, and packaged into an executable
-using PyInstaller for easy use. Its unique icon-hiding feature,enhances the Matrix theme by adding an element of secrecy and personalization.
-
-## How to Convert Python Script to Executable (For Developers)
-If you wish to modify the script and create your own version of the executable:
+## How to Convert Python Script to Executable
+If you prefer to run the script as an executable, follow these steps to create it and set it to run at startup:
 1. Install PyInstaller via pip:
    ```bash
    pip install pyinstaller
-Navigate to the script's directory and run:
-bash
-Copy code
+Convert the script to an executable:
 pyinstaller --onefile --windowed matrix_cascade.py
 This command generates a standalone executable in the dist directory.
+Place the Executable in the Windows Startup Folder:
+Find the matrix_cascade.exe in the dist folder.
+Copy this file to your Windows Startup folder. This setup ensures that the cascade effect starts automatically each time you start your computer.
+Additional Information
+This program was created using Python and Pygame, and leverages Windows-specific APIs to manipulate the desktop environment. The unique icon-hiding feature enhances the Matrix theme by adding an element of secrecy and personalization.
