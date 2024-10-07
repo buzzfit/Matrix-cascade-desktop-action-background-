@@ -17,8 +17,8 @@ within the cascade area.
   placed elsewhere will be hidden behind the cascade, only flashing briefly when hovered over.
 
 ## Technical Approach
-- The program uses a backdoor method to attach itself to the Windows desktop window,
-  enabling the cascade effect to function as a moving background. This innovative approach
+- The program utilizes a backdoor within the windows desktop setup to attach the pygame window to the Windows desktop window,
+  enabling the cascade effect to function as a moving background. The pygame window is then hidden from the task bar. This innovative approach
   allows the green Matrix numbers to animate over your static wallpaper, giving the illusion
   of dynamic interaction with your desktop environment.
 
